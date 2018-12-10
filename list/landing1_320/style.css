@@ -670,6 +670,7 @@ div.slider__item:last-child {
  /*фото 1*/
 .work-photo1 {
     background-image: url("img/portfolio_1.jpg");
+    background-size: contain;
 }
 
 /*фото 2*/
