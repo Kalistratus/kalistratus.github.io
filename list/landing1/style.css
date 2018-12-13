@@ -106,9 +106,6 @@ header nav {
 .main-nav a {
     color: #a4aead;
     text-decoration: none;
-    /*padding: 4px 10px;*/
-    border: 2px solid transparent;
-    border-radius: 4px;
     font-weight: bold;
     line-height: 36px;
     vertical-align: middle;
@@ -116,8 +113,12 @@ header nav {
 
 @media screen and (max-width: 670px){
     .main-nav a {
-        font-size: 12px;
-        padding: 4px 6px;
+        font-size: 16px;
+        padding: 4px 10px;
+    }
+
+    .on {
+        display: none;
     }
 }
 
@@ -125,12 +126,19 @@ header nav {
     .main-nav a {
         font-size: 14px;
         padding: 4px 10px;
+        border: 2px solid transparent;
+        border-radius: 4px;
+    }
+
+    .off {
+        display: none;
     }
 }
 
 /*наведение мыши на пункт навигационного меню*/
 .main-nav a:hover {
     border-color: #5b6168;
+    color: #646e6d;
     transition: all 0.3s linear;
 }
 
