@@ -58,6 +58,7 @@ header.sticky {
     min-height: inherit;
 }
 
+
 .container-head.right {
     justify-content: flex-end;
 }
@@ -105,13 +106,26 @@ header nav {
 .main-nav a {
     color: #a4aead;
     text-decoration: none;
-    padding: 4px 10px;
+    /*padding: 4px 10px;*/
     border: 2px solid transparent;
     border-radius: 4px;
-    font-size: 14px;
     font-weight: bold;
     line-height: 36px;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 670px){
+    .main-nav a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
+@media screen and (min-width: 671px){
+    .main-nav a {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
 }
 
 /*наведение мыши на пункт навигационного меню*/
