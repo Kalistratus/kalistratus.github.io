@@ -120,6 +120,10 @@ header nav {
     .on {
         display: none;
     }
+    
+    .header-logo {
+        width: 50px;
+    }
 
     .header-logo img {
         /*display: none;*/
