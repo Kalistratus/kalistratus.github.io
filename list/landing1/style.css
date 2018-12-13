@@ -122,16 +122,16 @@ header nav {
     }
 
     .header-logo {
-        width: 50px;
+        width: 45px;
     }
 
     .header-logo img {
-        width: 50px;
+        width: 45px;
         object-fit: contain;
     }
 
     .main-nav {
-        margin-right: 15px;
+        margin-right: 13px;
     }
 }
 
