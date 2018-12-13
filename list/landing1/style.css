@@ -120,20 +120,19 @@ header nav {
     .on {
         display: none;
     }
-    
+
     .header-logo {
         width: 50px;
     }
 
     .header-logo img {
-        /*display: none;*/
         width: 50px;
         object-fit: contain;
     }
 
-    /*.container-head {
-        justify-content: flex-end;
-    }*/
+    .main-nav {
+        margin-right: 15px;
+    }
 }
 
 @media screen and (min-width: 671px){
