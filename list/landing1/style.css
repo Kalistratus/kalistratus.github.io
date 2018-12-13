@@ -41,7 +41,7 @@ header {
     background-color: inherit;
     z-index: 9999;
     position: fixed;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 /*второе состояние шапки - при прокрутке (уменьшенный вариант)*/
