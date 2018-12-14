@@ -1,0 +1,139 @@
+/*
+li[class~="second"] {
+    color: blue;
+}
+td[rowspan],
+td[colspan] {
+    background-color: green;
+}
+
+table[border="2"],
+input[type="tel"] {
+    box-shadow: 3px 3px 3px;
+}
+
+[class*="person"] {
+    color: gray;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.35em;
+}
+
+#slider img:target {
+    display: block;
+}
+
+#slider {
+    position: relative;
+}
+
+img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: auto;
+}
+
+.active {
+    background-color: yellow;
+}
+
+#slider #two:target ~ nav a[href="#two"],
+#slider #three:target ~ nav a[href="#three"] {
+    background-color: yellow;
+}
+
+#slider #two:target ~ nav a[href="#one"],
+#slider #three:target ~ nav a[href="#one"] {
+    background-color: white;
+}
+
+nav {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    padding: 20px 0;
+    border: 2px inset black;
+}
+
+.direction {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.block1 {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 400px;
+    height: 100px;
+    background-color: gray;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.block2 {
+    width: 400px;
+    height: 100px;
+    background-color: yellow;
+    opacity: 0.8;
+}
+
+.block3 {
+    width: 400px;
+    height: 100px;
+    background-color: red;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.block4 {
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    opacity: 0.5;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.block5 {
+    width: 400px;
+    height: 100px;
+    background-color: green;
+    opacity: 0.5;
+}
+*/
+
+.folio {
+    object-fit: cover;
+    width: 360px;
+    height: auto;
+  }
+
+
+.wrapper {
+    position: relative;
+    padding-right: 10%; /* 16:9 Aspect Ratio */
+    padding-top: 30%;
+    max-width: 360px;
+    min-width: 320px;
+    display: inline-block;
+}
+.folio2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
