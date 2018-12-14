@@ -1,1 +1,18 @@
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    color: #8d8f92;
+    background-color: white;
+}
 
+.container {
+    min-width: 310px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
