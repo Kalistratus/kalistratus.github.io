@@ -9,10 +9,33 @@ body {
     background-color: white;
 }
 
+.list {
+    width: 100%;
+}
+
 .container {
     min-width: 310px;
     padding-left: 5px;
     padding-right: 5px;
-    max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
+}
+
+a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    background-image: linear-gradient(to bottom, rgb(60, 119, 153), rgb(158, 191, 211));
+    font-weight: 500;
+    text-shadow: 2px 2px 3px rgb(102, 102, 102),
+                -2px 2px 3px rgb(102, 102, 102);
+}
+
+a:hover {
+    font-size: 18px;
+    transition: all 100ms;
+    background-image: linear-gradient(to bottom, rgb(50, 99, 123), rgb(148, 171, 181));
 }
