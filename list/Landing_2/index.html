@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing page 2</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+
+    <header id="home"> <!--шапка-->
+        <div class="container container-head"> <!--контейнер-центровщик содержимого-->
+
+            <div class="header-logo"> <!--лого в шапке-->
+              <img src="img/logo.png" alt="Creativia"> <!--изображение лого-->
+            </div>
+
+            <nav class="top-menu" id="menu"> <!--меню в шапке-->
+              <ul class="main-nav">
+                <li><a href="#home" title="Home"><span class="on">HOME</span><span class="off"><i class="fas fa-home"></i></span></a>
+                <li><a href="#about" title="About us"><span class="on">about us</span><span class="off"><i class="fas fa-info-circle"></i></span></a>
+                <li><a href="#Portfolio" title="Portfolio"><span class="on">portfolio</span><span class="off"><i class="fas fa-pencil-alt"></i></span></a>
+                <li><a href="#clients" title="Clients"><span class="on">clients</span><span class="off"><i class="fas fa-users"></i></span></a>
+                <li><a href="#team" title="Team"><span class="on">team</span><span class="off"><i class="fas fa-cogs"></i></span></a>
+                <li><a href="#services" title="Services"><span class="on">services</span><span class="off"><i class="fas fa-list-ul"></i></span></a>
+                <li><a href="#blog" title="Blog"><span class="on">blog</span><span class="off"><i class="fas fa-phone-square"></i></span></a>
+                <li><a href="#contact" title="Contact"><span class="on">contact</span><span class="off"><i class="fas fa-phone-square"></i></span></a>
+              </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    
+
+    <!--слайдер-->
+    <div class="slider" id="slider">
+      <div id="slider-block" class="slider-block">
+
+        <ol class="slider__indicators"> <!--"хлебные крошки" фотографий слайдера-->
+          <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+          <li class="slider__indicator" data-slide-to="1"></li>
+          <li class="slider__indicator" data-slide-to="2"></li>
+        </ol>
+        
+        <!--содержимое первого слайда-->
+        <div class="slider__items">
+
+          <div class="slider__item slider__item_active">
+            <div class="flex">
+            <div class="container-slider">
+          
+              <div class="welcome">
+                <h1>why <span class="red">creativia ?</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae</p>
+              </div>
+                  
+              <div class="buttons">
+                <a href="#" class="btn btn-slider raleway" title="View more">FEATURES</a>
+                <a href="#" class="btn btn-slider raleway" title="Video tour">FREE PSD</a>
+              </div>
+        
+            </div>
+            </div>
+          </div>
+
+          <!--содержимое второго слайда-->
+          <div class="slider__item">
+            <div class="flex">
+            <div class="container-slider">
+          
+              <div class="welcome">
+                <h1>why <span class="red">creativia ?</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae</p>
+              </div>
+                  
+              <div class="buttons">
+                <a href="#" class="btn btn-slider raleway" title="View more">FEATURES</a>
+                <a href="#" class="btn btn-slider raleway" title="Video tour">FREE PSD</a>
+              </div>
+        
+            </div>
+            </div>
+          </div>
+
+          <!--содержимое третьего слайда-->
+          <div class="slider__item">
+            <div class="flex">
+            <div class="container-slider">
+          
+              <div class="welcome">
+                <h1>why <span class="red">creativia ?</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae</p>
+              </div>
+                  
+              <div class="buttons">
+                <a href="#" class="btn btn-slider raleway" title="View more">FEATURES</a>
+                <a href="#" class="btn btn-slider raleway" title="Video tour">FREE PSD</a>
+              </div>
+        
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <a class="slider__control slider__control_prev" href="#" role="button"></a>
+      <a class="slider__control slider__control_next" href="#" role="button"></a>
+    </div>
+
+
+
+
+    <div class="about" id="about">
+      <div class="container">
+
+        <div class="headline">
+          <h1>about <span class="red">creativia</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur <span class="red">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
+        </div>
+
+        <div class="main">
+          
+          <article class="about_main_left_flex">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae</p>
+            
+            <section>
+              <table class="about_main_list raleway">
+                <tr>
+                  <td class="click">+</td>
+                  <td class="description">Hwo is creativia</td>
+                </tr>
+                <tr class="hidden">
+                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</td>
+                </tr>
+              </table>
+            </section>
+
+            <section>
+              <table class="about_main_list raleway">
+                <tr>
+                  <td class="click">+</td>
+                  <td class="description">Experiences</td>
+                </tr>
+                <tr class="hidden">
+                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</td>
+                </tr>
+              </table>
+            </section>
+
+            <section>
+              <table class="about_main_list raleway">
+                <tr>
+                  <td class="click">+</td>
+                  <td class="description">Learn more</td>
+                </tr>
+                <tr class="hidden">
+                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</td>
+                </tr>
+              </table>
+            </section>
+
+          </article>
+
+          <div class="about_main_right_flex">
+            <img src="img/about_photo.png">
+          </div>
+
+        </div>
+
+        <div class="about_line_flex">
+          <div class="about_line"></div>
+        </div>
+
+        <div class="about_list_bottom">
+
+          <div class="about_list_section">
+            <i class="fas fa-heart one"></i>
+            <div class="svg">
+              <svg>
+                <g transform="translate(91,2)">
+                  <polygon points="22,75 0,38 22,0 65,0 87,38 65,75 22,75"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="raleway">FLAT DESIGN</h2>
+            <p>Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                eget mauris fusce sit amet</p>
+          </div>
+
+          <div class="about_list_section">
+            <i class="fas fa-check-square two"></i>
+            <div class="svg">
+              <svg>
+                <g transform="translate(91,2)">
+                  <polygon points="22,75 0,38 22,0 65,0 87,38 65,75 22,75"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="raleway">retina ready</h2>
+            <p>Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                  eget mauris fusce sit amet</p>
+          </div>
+
+          <div class="about_list_section">
+            <i class="fas fa-mobile-alt three"></i>
+            <div class="svg">
+              <svg>
+                <g transform="translate(91,2)">
+                  <polygon points="22,75 0,38 22,0 65,0 87,38 65,75 22,75"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="raleway">responsive</h2>
+            <p>Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet</p>
+          </div>
+
+          <div class="about_list_section">
+            <i class="fab fa-gripfire four"></i>
+            <div class="svg">
+              <svg>
+                <g transform="translate(91,2)">
+                  <polygon points="22,75 0,38 22,0 65,0 87,38 65,75 22,75"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="raleway">Clean & useful</h2>
+            <p>Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="script.js"></script>
+  </body>
+</html>
