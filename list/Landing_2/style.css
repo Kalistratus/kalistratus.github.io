@@ -25,6 +25,10 @@ body {
     margin: 0 auto;
 }
 
+.container_big {
+    max-width: 1400px;
+}
+
 .raleway {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -370,7 +374,7 @@ span.red {
 
 .headline h1 {
     font-size: 30px;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .headline p {
@@ -465,7 +469,7 @@ span.red {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 100px;
-    margin-bottom: 90px;
+    padding-bottom: 90px;
 }
 
 .about_list_section {
@@ -533,6 +537,205 @@ div.svg {
 
 
 
+/*++++++++++++++++++++++++++++++++++++++++ БЛОК +++++++++++++++++++++++++++++++++++++++*/
+
+.portfolio {
+    width: 100%;
+    min-height: 1075px;
+    background-color: #262626;
+}
+
+.portfolio .headline h1 {
+    color: #ffffff;
+}
+
+/*блок с меню*/
+.portfolio nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+/*само меню*/
+.portfolio-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+/*ссылки внутри элементов меню*/
+.portfolio-nav a {
+    color: #a4a4a4;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+/*наведение мыши на пункт меню*/
+.portfolio-nav a:hover {
+    color: #ff0036;
+    transition: all 0.3s linear;
+}
+
+/*активный пункт меню*/
+.portfolio-nav a:active {
+    color: #fff;
+    transition: none;
+}
+
+.portfolio_gallery {
+    min-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 95px;
+    padding-bottom: 110px;
+}
+
+.portfolio_photo {
+    height: 350px;
+    flex-grow: 1;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.portfolio_photo p {
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.portfolio_photo p:first-child {
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.portfolio_photo:hover {
+    background-image: none;
+    background-color: #050d11;
+    transition: all 0.2s linear;
+}
+
+.portfolio_photo:hover p {
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.portfolio_photo1 {
+    background-image: url("img/dollar.png");
+    background-color: #f39943;
+    width: 400px;
+}
+
+.portfolio_photo2 {
+    background-image: url("img/bank.png");
+    background-color: #3782aa;
+    width: 300px;
+}
+
+.portfolio_photo3 {
+    background-image: url("img/flower.png");
+    background-color: #ef5d88;
+    width: 400px;
+}
+
+.portfolio_photo4 {
+    background-image: url("img/card.png");
+    background-color: #f6f0e0;
+    width: 300px;
+}
+
+.portfolio_photo5 {
+    background-image: url("img/calc.png");
+    background-color: #56cc82;
+    width: 300px;
+}
+
+.portfolio_photo6 {
+    background-image: url("img/percent.png");
+    background-color: #95a5a5;
+    width: 400px;
+}
+
+.portfolio_photo7 {
+    background-image: url("img/case.png");
+    background-color: #24b0c9;
+    width: 300px;
+}
+
+.portfolio_photo8 {
+    background-image: url("img/check.png");
+    background-color: #fa8562;
+    width: 400px;
+}
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++ БЛОК +++++++++++++++++++++++++++++++++++++++*/
+
+.features {
+    width: 100%;
+    min-height: 986px;
+}
+
+.features_list {
+    border: 1px solid #e6e6e6;
+    border-collapse: collapse;
+}
+
+.features_list td {
+    height: 50px;
+    width: 300px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.features_list td.td_left {
+    text-align: left;
+}
+
+.features_list .check {
+    position: relative;
+    width: 68px;
+    text-align: initial;
+}
+
+.features_list_section i {
+    position: absolute;
+    left: 27px;
+    top: 17px;
+    font-size: 20px;
+    color: #262626;
+}
+
+.features_list_section svg {
+    width: 54px;
+    height: 40px;
+}
+
+.features_list_section polygon {
+    fill: #e6e6e6;
+}
+
+.features_list:hover i {
+    color: #ff0036;
+    transition: all 0.3s linear;
+}
+
+.features_list:hover polygon {
+    fill: #fff;
+    transition: all 0.3s linear;
+}
+
+.features_list:hover td {
+    background-color: #ff0036;
+    color: #fff;
+    transition: all 0.3s linear;
+}
 
 /*++++++++++++++++++++++++++++++++++++ Медиа запросы +++++++++++++++++++++++++++++++++++++++*/
 
