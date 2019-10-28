@@ -3,568 +3,335 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing page</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Landing page new</title>
+    <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
 
-
-    <!--шапка-->
-    <div class="head" id="header"> <!--тег header обернут в доп. div для возможности фиксации шапки при скролле-->
-      <header> <!--фиксированная шапка-->
-        <div class="container container-head"> <!--контейнер-центровщик-->
-
-            <div class="header-logo"> <!--лого в шапке-->
-              <img src="img/header_logo.png" alt="Modest">
-            </div>
-
-            <nav class="top-menu" id="menu"> <!--меню в шапке-->
-              <ul class="main-nav">
-                <li><a href="#header" title="Home"><span class="on">HOME</span><span class="off"><i class="fas fa-home"></i></span></a>
-                <li><a href="#about" title="About"><span class="on">about</span><span class="off"><i class="fas fa-info-circle"></i></span></a>
-                <li><a href="#work" title="Work"><span class="on">WORK</span><span class="off"><i class="fas fa-pencil-alt"></i></span></a>
-                <li><a href="#team" title="Team"><span class="on">TEAM</span><span class="off"><i class="fas fa-users"></i></span></a>
-                <li><a href="#services" title="Services"><span class="on">SERVICES</span><span class="off"><i class="fas fa-cogs"></i></span></a>
-                <li><a href="#features" title="Features"><span class="on">FEATURES</span><span class="off"><i class="fas fa-list-ul"></i></span></a>
-                <li><a href="#contact" title="Contact"><span class="on">CONTACT</span><span class="off"><i class="fas fa-phone-square"></i></span></a>
-              </ul>
+    <header class="section" id="header"> <!--Шапка-->
+        <div class="container">
+            <img src="img/header_logo.png" title="Modest">
+            <nav>
+                <ul>
+                    <li><a href="#header" title="Header"><span class="on">home</span><span class="off fas fa-home"></span></a></li>
+                    <li><a href="#about" title="about"><span class="on">about</span><span class="off fas fa-info-circle"></span></a></li>
+                    <li><a href="#work" title="work"><span class="on">work</span><span class="off fas fa-pencil-alt"></span></a></li>
+                    <li><a href="#team" title="team"><span class="on">team</span><span class="off fas fa-users"></span></a></li>
+                    <li><a href="#services" title="services"><span class="on">services</span><span class="off fas fa-cogs"></span></a></li>
+                    <li><a href="#features" title="features"><span class="on">features</span><span class="off fas fa-list-ul"></span></a></li>
+                    <li><a href="#contact" title="contact"><span class="on">contact</span><span class="off fas fa-phone-square"></span></a></li>
+                </ul>
             </nav>
-
         </div>
-      </header>
-     </div>
-    
+    </header>
 
-    <!--слайдер-->
-    <div class="slider" id="slider">
-      <div id="slider-block" class="slider-block">
+    <div class="slider" id="slider"> <!--Слайдер-->
 
-        <ol class="slider__indicators"> <!--"хлебные крошки" фотографий слайдера-->
-          <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
-          <li class="slider__indicator" data-slide-to="1"></li>
-          <li class="slider__indicator" data-slide-to="2"></li>
-        </ol>
-            
-        <div class="slider__items"> <!--фотографии слайдера-->
+      <ol class="slider__indicators">
+        <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+        <li class="slider__indicator" data-slide-to="1"></li>
+        <li class="slider__indicator" data-slide-to="2"></li>
+      </ol>
 
-          <div class="slider__item slider__item_active">
-            <div class="flex">
-            <div class="container-slider">
-          
-              <div class="welcome">
-                <h1>welcome to our marketplace</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
-                    non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
-              </div>
-                  
-              <div class="buttons">
-                <a href="#" class="btn btn-slider" title="View more">view more</a>
-                <a href="#" class="btn btn-slider" title="Video tour">video tour</a>
-              </div>
+      <div class="slider__items">
         
-            </div>
+        <!--первый слайд-->
+        <div class="slider__item slider__item_active">
+          <div class="container">
+            <div class="slider_text">
+              <h1 class="fontWhite">Welcome to our marketplace</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
+                  non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+              <a href="#" class="btn btn-slider" title="View more">view more</a>
+              <a href="#" class="btn btn-slider" title="Video tour">video tour</a>
             </div>
           </div>
+        </div>
 
-          <div class="slider__item">
-            <div class="flex">
-            <div class="container-slider">
-          
-              <div class="welcome">
-                <h1>DEDICATION TO THE CUSTOMERS</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
-                    non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
-              </div>
-                  
-              <div class="buttons">
-                <a href="#" class="btn btn-slider" title="View more">view more</a>
-                <a href="#" class="btn btn-slider" title="Video tour">video tour</a>
-              </div>
-        
-            </div>
+        <!--второй слайд-->
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider_text">
+              <h1 class="fontWhite">Working closely with our clients</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
+                  non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+              <a href="#" class="btn btn-slider" title="View more">view more</a>
+              <a href="#" class="btn btn-slider" title="Video tour">video tour</a>
             </div>
           </div>
+        </div>
 
-          <div class="slider__item">
-            <div class="flex">
-            <div class="container-slider">
-          
-              <div class="welcome">
-                <h1>WORKING CLOSELY WITH OUR CLIENTS</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
-                    non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
-              </div>
-                  
-              <div class="buttons">
-                <a href="#" class="btn btn-slider" title="View more">view more</a>
-                <a href="#" class="btn btn-slider" title="Video tour">video tour</a>
-              </div>
-        
-            </div>
+        <!--третий слайд-->
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider_text">
+              <h1 class="fontWhite">Dedication to the customers</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
+                  non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+              <a href="#" class="btn btn-slider" title="View more">view more</a>
+              <a href="#" class="btn btn-slider" title="Video tour">video tour</a>
             </div>
           </div>
-
         </div>
 
       </div>
+
     </div>
 
+    <section class="section about" id="about"> <!--WE ARE MODEST-->
+      <div class="container">
+        <h1>We are modest.</h1>
+        <div class="aboutContent flex">
 
-    <!--о нас-->
-    <div class="about" id="about">
-      <div class="container"> <!--контейнер-центровщик-->
-        
-          <h1 class="headline headline-black">we are modest.</h1> <!--заголовок-->
-          
-          <!--колонки-->
-          <div class="about-column">
-            <!--левая колонка-->
-            <div class="left-column-about">
-              <!--первый абзац-->
+          <div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.</p>
-              <!--второй абзац-->
               <p>Phasellus sollicitudin ante eros ornare, <b>sit amet luctus lorem semper</b>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
-
-              <!--кнопки соц сетей-->
-              <div class="social-about">
-                <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
-                <a href="#" class="fab fa-twitter" title="Twitter"></a>
-                <a href="#" class="fab fa-google" title="Google"></a>
-                <a href="#" class="fab fa-dribbble" title="Dribbble"></a>
-                <a href="#" class="fab fa-behance" title="Behance"></a>
-              </div>
-
-            </div>
-        
-            <!--правая колонка-->
-            <div class="right-column-about">
-
-              <!--первый блок в правой колонке-->
-              <div class="right-column-block right-column-block1">
-                <h2>Dedication to the customers</h2>
-                <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.</p>
-              </div>
-
-              <!--второй блок в правой колонке-->
-              <div class="right-column-block right-column-block2">
-                <h2>working closely with our clients</h2>
-                <p>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</p>
-              </div>
-
-              <!--третий блок в правой колонке-->
-              <div class="right-column-block right-column-block3">
-                <h2>increase happiness</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</p>
-              </div>
-
-            </div>
-
-          </div>
-      </div>
-    </div>
-
-    
-    <!--команда-->
-    <div class="team" id="team">
-      <div class="container"> <!--контейнер-центровщик-->
-        
-        <h1 class="headline headline-black">meet the team.</h1> <!--заголовок-->
-
-          <!--блок с фотографиями команды-->
-        <div class="block-all-photo-team">
-
-              <!--блок с первой фотографией-->
-          <div class="team-photo-block">
-
-            <div class="team-photo team-photo1"></div> <!--секция с фото-->
-            <div class="social-team"> <!--прячущиеся соц кнопки-->
-              <a href="#" class="fab fa-twitter" title="Twitter"></a>
-              <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
-              <a href="#" class="fab fa-linkedin-in" title="Linkedin"></a>
-            </div>
-
-            <div class="team-photo-label team-photo-label1"> <!--подпись к фото-->
-              <h3>Gloria Bromley</h3>
-              <p>CEO and Founder</p>
-            </div>
-
+              <a href="#" class="fab fa-facebook-f social" title="Facebook"></a>
+              <a href="#" class="fab fa-twitter social" title="Twitter"></a>
+              <a href="#" class="fab fa-google social" title="Google"></a>
+              <a href="#" class="fab fa-dribbble social" title="Dribbble"></a>
+              <a href="#" class="fab fa-behance social" title="Behance"></a>
           </div>
 
-              <!--блок со второй фотографией-->
-          <div class="team-photo-block">
+          <div>
+            <dl>
+              <dt class="one fontUpperSmall">Dedication to the customers</dt>
+              <dd>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.</dd>
 
-            <div class="team-photo team-photo2"></div> <!--секция с фото-->
-            <div class="social-team"> <!--прячущиеся соц кнопки-->
-              <a href="#" class="fab fa-twitter" title="Twitter"></a>
-              <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
-              <a href="#" class="fab fa-linkedin-in" title="Linkedin"></a>
-            </div>
-  
-            <div class="team-photo-label team-photo-label2"> <!--подпись к фото-->
-              <h3>Paul Torres</h3>
-              <p>Head of Development</p>
-            </div>
+              <dt class="two fontUpperSmall">working closely with our clients</dt>
+              <dd>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</dd>
 
-          </div>
-
-              <!--блок с третьей фотографией-->
-          <div class="team-photo-block">
-
-            <div class="team-photo team-photo3"></div> <!--секция с фото-->
-            <div class="social-team"> <!--прячущиеся соц кнопки-->
-              <a href="#" class="fab fa-twitter" title="Twitter"></a>
-              <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
-              <a href="#" class="fab fa-linkedin-in" title="Linkedin"></a>
-            </div>
-  
-            <div class="team-photo-label team-photo-label3"> <!--подпись к фото-->
-              <h3>Judith Gillette</h3>
-              <p>Graphic Desinger</p>
-            </div>
-
-          </div>
-
-              <!--блок с четвертой фотографией-->
-          <div class="team-photo-block">
-
-            <div class="team-photo team-photo4"></div> <!--секция с фото-->
-            <div class="social-team"> <!--прячущиеся соц кнопки-->
-              <a href="#" class="fab fa-twitter" title="Twitter"></a>
-              <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
-              <a href="#" class="fab fa-linkedin-in" title="Linkedin"></a>
-            </div>
-                  
-            <div class="team-photo-label team-photo-label4"> <!--подпись к фото-->
-              <h3>Delores Reed</h3>
-              <p>Client Service Director</p>
-            </div>
-
+              <dt class="three fontUpperSmall">increase happiness</dt>
+              <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</dd>
+            </dl>
           </div>
 
         </div>
       </div>
-    </div>
+    </section>
 
+    <section class="section team" id="team"> <!--Team-->
+      <div class="container">
+        <h1>Meet the team.</h1>
 
-    <!--наши работы-->
-    <div class="work" id="work">
-      <div class="container"> <!--контейнер-центровщик-->
+          <div class="photoTeam flex">
 
-          <h1 class="headline headline-white">lovely work.</h1> <!--заголовок-->
+            <div class="photo">
+              <img src="img/team_photo_1.jpg">
+              
+              <div class="socialHide">
+                <a href="#" class="fab fa-twitter social" title="Twitter"></a>
+                <a href="#" class="fab fa-facebook-f social" title="Facebook"></a>
+                <a href="#" class="fab fa-linkedin-in social" title="Linkedin"></a>
+              </div>
+              
+              <div class="name">
+                <h3 class="fontUpperSmall">Gloria Bromley</h3>
+                <p>CEO and Founder</p>
+              </div>
+            </div>
+           
+            <div class="photo">
+                <img src="img/team_photo_2.jpg">
+                
+                <div class="socialHide">
+                  <a href="#" class="fab fa-twitter social" title="Twitter"></a>
+                  <a href="#" class="fab fa-facebook-f social" title="Facebook"></a>
+                  <a href="#" class="fab fa-linkedin-in social" title="Linkedin"></a>
+                </div>
+                
+                <div class="name">
+                  <h3 class="fontUpperSmall">Paul Torres</h3>
+                  <p>Head of Development</p>
+                </div>
+            </div>
+           
+            <div class="photo">
+                <img src="img/team_photo_3.jpg">
+                
+                <div class="socialHide">
+                  <a href="#" class="fab fa-twitter social" title="Twitter"></a>
+                  <a href="#" class="fab fa-facebook-f social" title="Facebook"></a>
+                  <a href="#" class="fab fa-linkedin-in social" title="Linkedin"></a>
+                </div>
+                
+                <div class="name">
+                  <h3 class="fontUpperSmall">Judith Gillette</h3>
+                  <p>Graphic Desinger</p>
+                </div>
+            </div>
+            
+            <div class="photo">
+                <img src="img/team_photo_4.jpg">
+                
+                <div class="socialHide">
+                  <a href="#" class="fab fa-twitter social" title="Twitter"></a>
+                  <a href="#" class="fab fa-facebook-f social" title="Facebook"></a>
+                  <a href="#" class="fab fa-linkedin-in social" title="Linkedin"></a>
+                </div>
+                
+                <div class="name">
+                  <h3 class="fontUpperSmall">Delores Reed</h3>
+                  <p>Client Service Director</p>
+                </div>
+            </div>
+  
+          </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work"> <!--Work-->
+      <div class="container">
+        <h1 class="fontWhite">Lovely work.</h1>
+
+        <div class="works flex">
+          <div class="fontUpperSmall"><img src="img/portfolio_1.jpg"></div>
+          <div class="fontUpperSmall"><img src="img/portfolio_2.jpg"></div>
+          <div class="fontUpperSmall"><img src="img/portfolio_3.jpg"></div>
+          <div class="fontUpperSmall"><img src="img/portfolio_4.jpg"></div>
+          <div class="fontUpperSmall"><img src="img/portfolio_5.jpg"></div>
+          <div class="fontUpperSmall"><img src="img/portfolio_6.jpg"></div>
+        </div>
+
+        <div>
+        <a href="#" class="btn">Show me more</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section services" id="services"> <!--Services-->
+      <div class="container">
+        <h1>What we do.</h1>
+
+        <div class="service flex">
           
-          <div class="work-photos"> <!--блок со всеми фотографиями-->
-            
-            <!--блок первой фотографии-->
-            <div class="work-photo-section">
-              <picture class="work-photo">
-                <source media="(max-width:320px)" srcset="img/portfolio_1_small.jpg">
-                <source media="(min-width:321px)" srcset="img/portfolio_1.jpg">
-                <img src="img/portfolio_1.jpg" alt="portfolio_1">
-              </picture>
-              <div class="work-label">partnership guidlines</div> <!--подпись-->
-              <div class="cross"></div> <!--крестик-->
-            </div>
-            
-
-            <!--блок второй фотографии-->
-            <div class="work-photo-section">
-              <picture class="work-photo">
-                <source media="(max-width:320px)" srcset="img/portfolio_2_small.jpg">
-                <source media="(min-width:321px)" srcset="img/portfolio_2.jpg">
-                <img src="img/portfolio_2.jpg" alt="portfolio_2">
-              </picture>
-              <div class="work-label">partnership guidlines</div> <!--подпись-->
-              <div class="cross"></div> <!--крестик-->
-            </div>
-
-            <!--блок третьей фотографии-->
-            <div class="work-photo-section">
-              <picture class="work-photo">
-                <source media="(max-width:320px)" srcset="img/portfolio_3_small.jpg">
-                <source media="(min-width:321px)" srcset="img/portfolio_3.jpg">
-                <img src="img/portfolio_3.jpg" alt="portfolio_3">
-              </picture>
-              <div class="work-label">partnership guidlines</div> <!--подпись-->
-              <div class="cross"></div> <!--крестик-->
-            </div>
-
-            <!--блок четвертой фотографии-->
-            <div class="work-photo-section">
-              <picture class="work-photo">
-                <source media="(max-width:320px)" srcset="img/portfolio_4_small.jpg">
-                <source media="(min-width:321px)" srcset="img/portfolio_4.jpg">
-                <img src="img/portfolio_4.jpg" alt="portfolio_4">
-              </picture>
-              <div class="work-label">partnership guidlines</div> <!--подпись-->
-              <div class="cross"></div> <!--крестик-->
-            </div>
-
-            <!--блок пятой фотографии-->
-            <div class="work-photo-section">
-              <picture class="work-photo">
-                <source media="(max-width:320px)" srcset="img/portfolio_5_small.jpg">
-                <source media="(min-width:321px)" srcset="img/portfolio_5.jpg">
-                <img src="img/portfolio_5.jpg" alt="portfolio_5">
-              </picture>
-              <div class="work-label">partnership guidlines</div> <!--подпись-->
-              <div class="cross"></div> <!--крестик-->
-            </div>
-
-            <!--блок шестой фотографии-->
-            <div class="work-photo-section">
-              <picture class="work-photo">
-                <source media="(max-width:320px)" srcset="img/portfolio_6_small.jpg">
-                <source media="(min-width:321px)" srcset="img/portfolio_6.jpg">
-                <img src="img/portfolio_6.jpg" alt="portfolio_6">
-              </picture>
-              <div class="work-label">partnership guidlines</div> <!--подпись-->
-              <div class="cross"></div> <!--крестик-->
-            </div>
-
+          <div class="block">
+            <i class="fas fa-cogs"></i>
+            <h3 class="fontUpperSmall">Easy theme Setup</h3>
+            <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
           </div>
 
-          <div class="buttons"> <!--блок с кнопкой-->
-            <a href="#" class="btn btn-work" title="Show me more">show me more</a>
-          </div>
-        
-      </div>
-    </div>
-
-
-    <!--что мы делаем-->
-    <div class="services" id="services">
-      <div class="container"> <!--контейнер-центровщик-->
-
-        <h1 class="headline headline-black">what we do.</h1> <!--заголовок-->
-
-        <div class="services-list"> <!--блок со всем перечнем-->
-
-          <div class="services-section"> <!--первый блок-->
-
-            <div class="services-icon"><i class="fas fa-cogs"></i></div> <!--иконка-->
-            
-            <div class="services-text"> <!--текстовое содержание-->
-              <h2>Easy theme Setup</h2>
+          <div class="block">
+              <i class="fas fa-pencil-alt"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
               <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-            </div>
-
           </div>
 
-          <div class="services-section"> <!--второй блок-->
-
-            <div class="services-icon"><i class="fas fa-pencil-alt"></i></div> <!--иконка-->
-            
-            <div class="services-text"> <!--текстовое содержание-->
-              <h2>pixel perfect design</h2>
+          <div class="block">
+              <i class="fas fa-mobile-alt"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
               <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-            </div>
-
           </div>
 
-            <div class="services-section"> <!--третий блок-->
+          <div class="block">
+              <i class="far fa-clock"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
+              <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+          </div>
 
-              <div class="services-icon"><i class="fas fa-mobile-alt"></i></div> <!--иконка-->
-              
-              <div class="services-text"> <!--текстовое содержание-->
-                <h2>responsive display</h2>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-              </div>
-  
-            </div>
+          <div class="block">
+              <i class="fas fa-cogs"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
+              <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+          </div>
 
-            <div class="services-section"> <!--четвертый блок-->
+          <div class="block">
+              <i class="fas fa-pencil-alt"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
+              <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+          </div>
 
-              <div class="services-icon"><i class="far fa-clock"></i></div> <!--иконка-->
-              
-              <div class="services-text"> <!--текстовое содержание-->
-                <h2>24/7 support</h2>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-              </div>
-  
-            </div>
+          <div class="block">
+              <i class="fas fa-mobile-alt"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
+              <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+          </div>
 
-            <div class="services-section"> <!--пятый блок-->
-
-              <div class="services-icon"><i class="fas fa-cogs"></i></div> <!--иконка-->
-              
-              <div class="services-text"> <!--текстовое содержание-->
-                <h2>Easy theme Setup</h2>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-              </div>
-  
-            </div>
-  
-            <div class="services-section"> <!--шестой блок-->
-  
-              <div class="services-icon"><i class="fas fa-pencil-alt"></i></div> <!--иконка-->
-              
-              <div class="services-text"> <!--текстовое содержание-->
-                <h2>pixel perfect design</h2>
-                <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-              </div>
-  
-            </div>
-  
-              <div class="services-section"> <!--седьмой блок-->
-  
-                <div class="services-icon"><i class="fas fa-mobile-alt"></i></div> <!--иконка-->
-                
-                <div class="services-text"> <!--текстовое содержание-->
-                  <h2>responsive display</h2>
-                  <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-                </div>
-    
-              </div>
-  
-              <div class="services-section"> <!--восьмой блок-->
-  
-                <div class="services-icon"><i class="far fa-clock"></i></div> <!--иконка-->
-                
-                <div class="services-text"> <!--текстовое содержание-->
-                  <h2>24/7 support</h2>
-                  <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-                </div>
-    
-              </div>
+          <div class="block">
+              <i class="far fa-clock"></i>
+              <h3 class="fontUpperSmall">Easy theme Setup</h3>
+              <p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+          </div>
 
         </div>
 
       </div>
-    </div>
+    </section>
 
-    
-    <!--особенности-->
-    <div class="features" id="features">
-      <div class="container"> <!--контейнер-центровщик-->
+    <section class="section features" id="features"> <!--Features-->
+      <div class="container">
+        <h1 class="fontWhite">Features.</h1>
 
-        <h1 class="headline headline-white">features.</h1> <!--заголовок-->
+        <div class="features_main flex">
+          
+          <div class="block">
+            <img src="img/features_photo_1.jpg">
+            <h3 class="fontUpperSmall">Product Design: Eames Chairs</h3>
+            <p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
+          </div>
 
-        <div class="features-block"> <!--блок всех фото и описаний-->
+          <div class="block">
+              <img src="img/features_photo_2.jpg">
+              <h3 class="fontUpperSmall">Elegant and Colorful Logos</h3>
+              <p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
+          </div>
 
-            <div class="features-section"> <!--первый блок-->
-
-              <picture class="features-photo">
-                <source media="(max-width:320px)" srcset="img/features_photo_1_small.jpg">
-                <source media="(min-width:321px)" srcset="img/features_photo_1.jpg">
-                <img src="img/features_photo_1.jpg" alt="features_photo_1">
-              </picture>
-              
-              <div class="features-text"> <!--текстовое содержание-->
-                <h2>Product Design: Eames Chairs</h2>
-                <p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
-              </div>
-  
-            </div>
-
-            <div class="features-section"> <!--второй блок-->
-
-              <picture class="features-photo">
-                <source media="(max-width:320px)" srcset="img/features_photo_2_small.jpg">
-                <source media="(min-width:321px)" srcset="img/features_photo_2.jpg">
-                <img src="img/features_photo_2.jpg" alt="features_photo_2">
-              </picture>
-              
-              <div class="features-text"> <!--текстовое содержание-->
-                <h2>Elegant and Colorful Logos</h2>
-                <p>I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it.</p>
-              </div>
-  
-            </div>
-
-            <div class="features-section"> <!--третий блок-->
-
-              <picture class="features-photo">
-                <source media="(max-width:320px)" srcset="img/features_photo_3_small.jpg">
-                <source media="(min-width:321px)" srcset="img/features_photo_3.jpg">
-                <img src="img/features_photo_3.jpg" alt="features_photo_3">
-              </picture>
-              
-              <div class="features-text"> <!--текстовое содержание-->
-                <h2>A Showcase of Creative</h2>
-                <p>It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.</p>
-              </div>
-  
-            </div>
+          <div class="block">
+              <img src="img/features_photo_3.jpg">
+              <h3 class="fontUpperSmall">A Showcase of Creative</h3>
+              <p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
+          </div>
 
         </div>
-
+  
       </div>
-    </div>
+    </section>
 
+    <section class="section contact" id="contact"> <!--contact-->
+      <div class="map" id="map"></div>
+      <div class="container">
+        <h1>Stay in touch.</h1>
 
-    <!--контактная информация-->
-    <div class="contact" id="contact">
-      <div class="container"> <!--контейнер-центровщик-->
+        <div class="contactColumn flex">
 
-          <h1 class="headline headline-black xxx">stay in touch.</h1> <!--заголовок-->
-        
-          <div class="flex-contact"> <!--flex-контейнер для contact information-->
-          <div class="contact_information"> <!--блок contact information-->
-            <h2>contact information</h2>
+          <div class="contactInfo">
+            <h2 class="fontUpperSmall">Contact information</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.</p>
             <p>Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
           </div>
 
-          <div class="form"> <!--блок формы обратной связи-->
-            <form class="feedback-form" action="/modest-mail" method="post"> <!--форма-->
-              <div class="name_mail">
-
-                <div class="feedback-form-group feedback-form-group-left"> <!--имя-->
-                  <label for="yourname">Your Name</label>
-                  <input type="text" name="yourname" id="yourname" tabindex="1" required>
-                </div>
-
-                <div class="feedback-form-group feedback-form-group-right"> <!--email-->
-                  <label for="youremail">Your email</label>
-                  <input type="email" name="youremail" id="youremail" tabindex="2" required>
-                </div>
-
-              </div>
-
-              <div class="feedback-form-group"> <!--сообщение-->
-                <label for="message">Your message</label>
-                <textarea name="message" id="message"  tabindex="3" required></textarea>
-              </div>
-
-              <div class="buttons"> <!--кнопка-->
-                <input type="submit" class="btn btn-form" value="send message"  tabindex="4">
-              </div>
-      
-            </form>
+          <div class="form fontUpperSmall">
+            <div class="login"><label><p>Your name</p><input type="text"></label></div>
+            <div class="mail"><label><p>Your email</p><input type="email"></label></div>
+            <div class="msg"><label><p>Your message</p><textarea></textarea></label>
+              <input type="submit" class="btn btn-form" value="send message">
+            </div>
           </div>
-          </div>
+
+        </div>
 
       </div>
-      <div class="map" id="map"></div> <!--карта-->
-    </div>
+    </section>
 
-
-    <!--подвал-->
-    <footer>
-      <div class="container container-footer"> <!--контейнер-центровщик-->
-        
-        <!--© Copyright-->
-        <div class="left-footer-block">
-          <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
-        </div>
-
-        <div class="zero"></div> <!--пустой блок, помогающий в позиционировании блока ниже (когда блок ниже переносится на новую строку)-->
-
-        <!--соц ссылки-->
-        <div class="right-footer-block">
-            <a href="#" class="fab fa-twitter" title="Twitter"></a>
-            <a href="#" class="fab fa-facebook-f" title="Facebook"></a>
-            <a href="#" class="fab fa-skype" title="Skype"></a>
-            <a href="#" class="fab fa-behance" title="Behance"></a>
-            <a href="#" class="fab fa-linkedin-in" title="Linkedin"></a>
-        </div>
+    <footer class="section"> <!--Подвал-->
+      <div class="container">
+        <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#" class="fab fa-twitter" title="Twitter"></a></li>
+          <li><a href="#" class="fab fa-facebook-f" title="Facebook"></a></li>
+          <li><a href="#" class="fab fa-skype" title="Skype"></a></li>
+          <li><a href="#" class="fab fa-behance" title="Behance"></a></li>
+          <li><a href="#" class="fab fa-linkedin-in" title="Linkedin"></a></li>
+        </ul>
 
       </div>
     </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
